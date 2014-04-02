@@ -4,7 +4,7 @@ using SQMImportExport.Export;
 using SQMImportExport.Export.ArmA2;
 using SQMImportExport.StreamHelpers;
 
-namespace SQMReorderer.Tests.Export
+namespace SQMImportExport.Tests.Export
 {
     public class SqmFileExporterTestsBase
     {

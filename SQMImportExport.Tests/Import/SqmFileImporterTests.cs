@@ -7,7 +7,7 @@ using SQMImportExport.Import;
 using SQMImportExport.Import.Context;
 using SQMImportExport.StreamHelpers;
 
-namespace SQMReorderer.Tests.Import
+namespace SQMImportExport.Tests.Import
 {
     [TestFixture]
     public class SqmFileImporterTests

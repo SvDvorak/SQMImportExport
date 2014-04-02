@@ -5,7 +5,7 @@ using SQMImportExport.Common;
 using SQMImportExport.Import;
 using SQMImportExport.Import.FileVersion;
 
-namespace SQMReorderer.Tests.Import
+namespace SQMImportExport.Tests.Import
 {
     [TestFixture]
     public class SqmImporterTests

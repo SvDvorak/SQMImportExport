@@ -2,12 +2,11 @@
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using SQMImportExport;
 using SQMImportExport.ArmA2;
 using SQMImportExport.Common;
 using SQMImportExport.Export.ArmA2;
 
-namespace SQMReorderer.Tests.Export.ArmA2
+namespace SQMImportExport.Tests.Export.ArmA2
 {
     [TestFixture]
     public class SqmElementExportVisitorTests

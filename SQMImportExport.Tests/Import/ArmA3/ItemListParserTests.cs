@@ -6,7 +6,7 @@ using SQMImportExport.Import.ArmA3;
 using SQMImportExport.Import.ArmA3.Vehicle;
 using SQMImportExport.Import.Context;
 
-namespace SQMReorderer.Tests.Import.ArmA3
+namespace SQMImportExport.Tests.Import.ArmA3
 {
     [TestFixture]
     public class ItemListParserTests

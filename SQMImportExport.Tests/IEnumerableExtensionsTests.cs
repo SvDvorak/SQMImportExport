@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace SQMReorderer.Tests
+namespace SQMImportExport.Tests
 {
 	[TestFixture]
     public class IEnumerableExtensionsTests

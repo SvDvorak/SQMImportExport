@@ -3,7 +3,7 @@ using NUnit.Framework;
 using SQMImportExport.Import.ArmA3.Waypoint;
 using SQMImportExport.Import.Context;
 
-namespace SQMReorderer.Tests.Import.ArmA3
+namespace SQMImportExport.Tests.Import.ArmA3
 {
     [TestFixture]
     public class WaypointItemParserTests

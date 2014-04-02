@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SQMReorderer.Tests
+namespace SQMImportExport.Tests
 {
     public static class IEnumerableExtensions
     {

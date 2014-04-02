@@ -4,7 +4,7 @@ using NUnit.Framework;
 using SQMImportExport.Common;
 using SQMImportExport.Export;
 
-namespace SQMReorderer.Tests.Export
+namespace SQMImportExport.Tests.Export
 {
 	[TestFixture]
     public class SqmExporterTests

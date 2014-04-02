@@ -11,7 +11,7 @@ using SQMImportExport.Import.Context;
 using SQMImportExport.Import.FileVersion;
 using SQMImportExport.StreamHelpers;
 
-namespace SQMReorderer.Tests.Import
+namespace SQMImportExport.Tests.Import
 {
     [Category("AcceptanceTest")]
     [TestFixture]

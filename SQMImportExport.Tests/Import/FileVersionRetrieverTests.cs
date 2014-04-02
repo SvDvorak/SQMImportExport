@@ -3,7 +3,7 @@ using NSubstitute;
 using NUnit.Framework;
 using SQMImportExport.Import.FileVersion;
 
-namespace SQMReorderer.Tests.Import
+namespace SQMImportExport.Tests.Import
 {
     [TestFixture]
     public class FileVersionRetrieverTests

@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
-using SQMImportExport;
 using SQMImportExport.ArmA2;
 using SQMImportExport.Import.ArmA2.Intel;
 using SQMImportExport.Import.Context;
 using SQMImportExport.Import.DataSetters;
 
-namespace SQMReorderer.Tests.Import.ArmA2
+namespace SQMImportExport.Tests.Import.ArmA2
 {
     [TestFixture]
     public class ContextSetterTests

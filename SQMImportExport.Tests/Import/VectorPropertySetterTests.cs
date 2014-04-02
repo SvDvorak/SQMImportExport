@@ -1,10 +1,9 @@
 ﻿using NUnit.Framework;
-using SQMImportExport;
 using SQMImportExport.Common;
 using SQMImportExport.Import.Context;
 using SQMImportExport.Import.DataSetters;
 
-namespace SQMReorderer.Tests.Import
+namespace SQMImportExport.Tests.Import
 {
     [TestFixture]
     public class VectorPropertySetterTests

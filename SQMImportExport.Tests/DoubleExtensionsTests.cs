@@ -1,9 +1,8 @@
 ﻿using System.Globalization;
 using System.Threading;
 using NUnit.Framework;
-using SQMImportExport;
 
-namespace SQMReorderer.Tests
+namespace SQMImportExport.Tests
 {
     [TestFixture]
     public class DoubleExtensionsTests

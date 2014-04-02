@@ -2,7 +2,7 @@ using NSubstitute;
 using NUnit.Framework;
 using SQMImportExport.ArmA3;
 
-namespace SQMReorderer.Tests.Export
+namespace SQMImportExport.Tests.Export
 {
     [TestFixture]
     public class SqmFileExporterTests_arma_3 : SqmFileExporterTestsBase

@@ -4,7 +4,7 @@ using SQMImportExport.ArmA2;
 using SQMImportExport.Import.ArmA2;
 using SQMImportExport.Import.Context;
 
-namespace SQMReorderer.Tests.Import.ArmA2
+namespace SQMImportExport.Tests.Import.ArmA2
 {
     [TestFixture]
     public class SqmParserTests

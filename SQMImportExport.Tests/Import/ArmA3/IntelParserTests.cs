@@ -4,7 +4,7 @@ using SQMImportExport.Import;
 using SQMImportExport.Import.ArmA3.Intel;
 using SQMImportExport.Import.Context;
 
-namespace SQMReorderer.Tests.Import.ArmA3
+namespace SQMImportExport.Tests.Import.ArmA3
 {
     [TestFixture]
     public class IntelParserTests

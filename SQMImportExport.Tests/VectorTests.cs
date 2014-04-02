@@ -1,8 +1,7 @@
 ﻿using NUnit.Framework;
-using SQMImportExport;
 using SQMImportExport.Common;
 
-namespace SQMReorderer.Tests
+namespace SQMImportExport.Tests
 {
     [TestFixture]
     public class VectorTests
