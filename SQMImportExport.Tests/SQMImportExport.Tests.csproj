@@ -70,8 +70,6 @@
     <Compile Include="Export\ContextIndenterTests.cs" />
     <Compile Include="Export\ArmA2\SqmElementExportVisitorTests.cs" />
     <Compile Include="Export\SqmPropertyVisitorTests.cs" />
-    <Compile Include="IEnumerableExtensions.cs" />
-    <Compile Include="IEnumerableExtensionsTests.cs" />
     <Compile Include="Import\ArmA3\WaypointItemParserTests.cs" />
     <Compile Include="Import\EffectsParserTests.cs" />
     <Compile Include="Import\ArmA2\WaypointItemParserTests.cs" />
