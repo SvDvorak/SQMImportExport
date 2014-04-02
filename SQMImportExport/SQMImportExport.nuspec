@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SQMImportExport</id>
+    <version>0.1</version>
+    <title>SQM Import Export</title>
+    <authors>Andreas Wilcox</authors>
+    <owners>Andreas Wilcox</owners>
+    <projectUrl>https://code.google.com/p/sqmreorderer/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains an assembly for importing and exporting ArmA mission files (SQM-files). Both ArmA 2 and ArmA 3 versions are supported but might not be complete, contact me if you are unable to import a mission that should work.</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>SQM Import Export ArmA</tags>
+  </metadata>
+  <files>
+    <file src="readme.txt" target="" />
+  </files>
+</package>

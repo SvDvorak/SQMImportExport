@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47888AD3-BB00-415D-9C69-CE88C2EBD76B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SQMImportExport.Tests</RootNamespace>
+    <AssemblyName>SQMImportExport.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Import\ArmA3\mission.sqm" />
+    <EmbeddedResource Include="Import\ArmA2\mission.sqm" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoubleExtensionsTests.cs" />
+    <Compile Include="Export\SqmExporterTests.cs" />
+    <Compile Include="Export\SqmFileExporterTests_arma_3.cs" />
+    <Compile Include="Export\SqmFileExporterTestsBase.cs" />
+    <Compile Include="Export\ArmA3\SqmElementExportVisitorTests.cs" />
+    <Compile Include="Export\ContextIndenterTests.cs" />
+    <Compile Include="Export\ArmA2\SqmElementExportVisitorTests.cs" />
+    <Compile Include="Export\SqmPropertyVisitorTests.cs" />
+    <Compile Include="IEnumerableExtensions.cs" />
+    <Compile Include="IEnumerableExtensionsTests.cs" />
+    <Compile Include="Import\ArmA3\WaypointItemParserTests.cs" />
+    <Compile Include="Import\EffectsParserTests.cs" />
+    <Compile Include="Import\ArmA2\WaypointItemParserTests.cs" />
+    <Compile Include="Import\CommonRegexPatternsTests.cs" />
+    <Compile Include="Import\ArmA2\ContextSetterTests.cs" />
+    <Compile Include="Import\DoublePropertySetterTests.cs" />
+    <Compile Include="Import\FileVersionRetrieverTests.cs" />
+    <Compile Include="Import\IntegerListPropertySetterTests.cs" />
+    <Compile Include="Import\IntegerPropertySetterTests.cs" />
+    <Compile Include="Import\ArmA2\IntelParserTests.cs" />
+    <Compile Include="Import\ArmA2\ItemListParserTests.cs" />
+    <Compile Include="Import\ArmA2\MarkerItemParserTests.cs" />
+    <Compile Include="Import\ArmA2\MissionStateParserTests.cs" />
+    <Compile Include="Import\MultiLineStringListPropertySetterTests.cs" />
+    <Compile Include="Import\ParsingHelperFunctionsTests.cs" />
+    <Compile Include="Import\ArmA2\SensorItemParserTests.cs" />
+    <Compile Include="Import\SqmContextCreatorTests.cs" />
+    <Compile Include="Import\SqmFileTests.cs" />
+    <Compile Include="Import\ArmA2\SqmParserTests.cs" />
+    <Compile Include="Import\SqmImporterTests.cs" />
+    <Compile Include="Import\StringLineSetterTests.cs" />
+    <Compile Include="Import\StringListPropertySetterTests.cs" />
+    <Compile Include="Import\StringPropertySetterTests.cs" />
+    <Compile Include="Import\VectorPropertySetterTests.cs" />
+    <Compile Include="Import\ArmA2\VehicleItemParserTests.cs" />
+    <Compile Include="Import\ArmA3\ContextSetterTests.cs" />
+    <Compile Include="Import\ArmA3\IntelParserTests.cs" />
+    <Compile Include="Import\ArmA3\ItemListParserTests.cs" />
+    <Compile Include="Import\ArmA3\MarkerItemParserTests.cs" />
+    <Compile Include="Import\ArmA3\MissionStateParserTests.cs" />
+    <Compile Include="Import\ArmA3\SensorItemParserTests.cs" />
+    <Compile Include="Import\ArmA3\SqmParserTests.cs" />
+    <Compile Include="Import\ArmA3\VehicleItemParserTests.cs" />
+    <Compile Include="Export\SqmFileExporterTests_arma_2.cs" />
+    <Compile Include="Import\SqmFileImporterTests.cs" />
+    <Compile Include="VectorTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQMImportExport\SQMImportExport.csproj">
+      <Project>{2a3d6bf9-d17a-43bd-bea5-ebb73eb6e569}</Project>
+      <Name>SQMImportExport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NSubstitute">
+      <HintPath>..\packages\NSubstitute.1.7.1.0\lib\NET40\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

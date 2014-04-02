@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A3D6BF9-D17A-43BD-BEA5-EBB73EB6E569}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SQMImportExport</RootNamespace>
+    <AssemblyName>SQMImportExport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoubleExtensions.cs" />
+    <Compile Include="Export\ArmA2\ISqmElementVisitor.cs" />
+    <Compile Include="Export\ArmA3\ISqmElementVisitor.cs" />
+    <Compile Include="Export\ArmA3\SqmElementExportVisitor.cs" />
+    <Compile Include="Export\ContextIndenter.cs" />
+    <Compile Include="Export\ISqmExporter.cs" />
+    <Compile Include="Export\ISqmFileExporterFactory.cs" />
+    <Compile Include="Export\ISqmPropertyVisitor.cs" />
+    <Compile Include="Export\ArmA2\SqmElementExportVisitor.cs" />
+    <Compile Include="Export\SqmExporter.cs" />
+    <Compile Include="Export\SqmFileExporter.cs" />
+    <Compile Include="Export\SqmFileExporterFactory.cs" />
+    <Compile Include="Export\SqmPropertyVisitor.cs" />
+    <Compile Include="Common\IMissionState.cs" />
+    <Compile Include="Common\MissionStateBase.cs" />
+    <Compile Include="Common\VehicleBase.cs" />
+    <Compile Include="Common\MarkersArray.cs" />
+    <Compile Include="Common\ISqmContentsVisitor.cs" />
+    <Compile Include="Import\ISqmFileImporter.cs" />
+    <Compile Include="Common\SqmContentsBase.cs" />
+    <Compile Include="Import\ArmA3\Waypoint\WaypointItemParser.cs" />
+    <Compile Include="Import\ArmA3\Waypoint\WaypointItemParserFactory.cs" />
+    <Compile Include="ArmA3\Waypoint.cs" />
+    <Compile Include="Import\DataSetters\Effects\EffectsParser.cs" />
+    <Compile Include="Import\DataSetters\Effects\EffectsParserFactory.cs" />
+    <Compile Include="Import\DataSetters\StringLineSetter.cs" />
+    <Compile Include="Import\ArmA2\Waypoint\WaypointItemParserFactory.cs" />
+    <Compile Include="Import\ArmA2\Waypoint\WaypointItemParser.cs" />
+    <Compile Include="ArmA2\Waypoint.cs" />
+    <Compile Include="Import\SqmFileImporter.cs" />
+    <Compile Include="Import\DataSetters\ILineSetter.cs" />
+    <Compile Include="Import\DataSetters\StringListPropertySetter.cs" />
+    <Compile Include="Import\FileVersion\FileVersion.cs" />
+    <Compile Include="Import\FileVersion\FileVersionRetriever.cs" />
+    <Compile Include="Import\FileVersion\SqmVersionException.cs" />
+    <Compile Include="Import\HelperFunctions\CommonRegexPatterns.cs" />
+    <Compile Include="Import\HelperFunctions\ParsingHelperFunctions.cs" />
+    <Compile Include="Import\ArmA3\Intel\IntelParser.cs" />
+    <Compile Include="Import\ArmA3\ItemListParser.cs" />
+    <Compile Include="Import\ArmA3\ItemParserBase.cs" />
+    <Compile Include="Import\ArmA3\Marker\MarkerItemParser.cs" />
+    <Compile Include="Import\ArmA3\Marker\MarkerItemParserFactory.cs" />
+    <Compile Include="Import\ArmA3\MissionState\MissionStateParser.cs" />
+    <Compile Include="Import\ArmA3\Sensor\SensorItemParser.cs" />
+    <Compile Include="Import\ArmA3\Sensor\SensorItemParserFactory.cs" />
+    <Compile Include="Import\ArmA3\Vehicle\VehicleItemParser.cs" />
+    <Compile Include="Import\ArmA3\Vehicle\VehicleItemParserFactory.cs" />
+    <Compile Include="ArmA3\Intel.cs" />
+    <Compile Include="ArmA3\Marker.cs" />
+    <Compile Include="ArmA3\MissionState.cs" />
+    <Compile Include="ArmA3\Sensor.cs" />
+    <Compile Include="ArmA3\SqmContents.cs" />
+    <Compile Include="ArmA3\Vehicle.cs" />
+    <Compile Include="Import\ArmA3\SqmParser.cs" />
+    <Compile Include="Import\FileVersion\IFileVersionRetriever.cs" />
+    <Compile Include="Import\ISqmImporter.cs" />
+    <Compile Include="Import\FileVersion\IStreamReaderAdapter.cs" />
+    <Compile Include="Import\FileVersion\IStreamReaderFactory.cs" />
+    <Compile Include="Import\SqmImporter.cs" />
+    <Compile Include="Import\FileVersion\StreamReaderAdapter.cs" />
+    <Compile Include="Import\FileVersion\StreamReaderFactory.cs" />
+    <Compile Include="Import\Context\ISqmContextCreator.cs" />
+    <Compile Include="Import\Context\SqmContext.cs" />
+    <Compile Include="Import\Context\SqmContextCreator.cs" />
+    <Compile Include="Import\Context\SqmLine.cs" />
+    <Compile Include="Import\DataSetters\ContextSetter.cs" />
+    <Compile Include="Import\DataSetters\DoublePropertySetter.cs" />
+    <Compile Include="Import\DataSetters\IContextSetter.cs" />
+    <Compile Include="Import\DataSetters\IntegerListPropertySetter.cs" />
+    <Compile Include="Import\DataSetters\IntegerPropertySetter.cs" />
+    <Compile Include="Import\DataSetters\MultiLineStringListPropertySetter.cs" />
+    <Compile Include="Import\DataSetters\MultiValuePropertySetterBase.cs" />
+    <Compile Include="Import\DataSetters\LineSetterBase.cs" />
+    <Compile Include="Import\DataSetters\SingleValuePropertySetterBase.cs" />
+    <Compile Include="Import\DataSetters\StringPropertySetter.cs" />
+    <Compile Include="Import\DataSetters\VectorPropertySetter.cs" />
+    <Compile Include="Import\ISqmParser.cs" />
+    <Compile Include="Import\IItemParserFactory.cs" />
+    <Compile Include="Import\ArmA2\Intel\IntelParser.cs" />
+    <Compile Include="Import\IParser.cs" />
+    <Compile Include="Import\ArmA2\ItemListParser.cs" />
+    <Compile Include="Import\ArmA2\ItemParserBase.cs" />
+    <Compile Include="Import\ArmA2\Marker\MarkerItemParser.cs" />
+    <Compile Include="Import\ArmA2\Marker\MarkerItemParserFactory.cs" />
+    <Compile Include="Import\ArmA2\MissionState\MissionStateParser.cs" />
+    <Compile Include="Import\ParserBase.cs" />
+    <Compile Include="Import\ArmA2\Sensor\SensorItemParser.cs" />
+    <Compile Include="Import\ArmA2\Sensor\SensorItemParserFactory.cs" />
+    <Compile Include="Import\ArmA2\Vehicle\VehicleItemParser.cs" />
+    <Compile Include="Import\ArmA2\Vehicle\VehicleItemParserFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="ArmA2\Intel.cs" />
+    <Compile Include="ArmA2\Marker.cs" />
+    <Compile Include="ArmA2\MissionState.cs" />
+    <Compile Include="ArmA2\Sensor.cs" />
+    <Compile Include="ArmA2\SqmContents.cs" />
+    <Compile Include="ArmA2\Vehicle.cs" />
+    <Compile Include="Import\SqmParseException.cs" />
+    <Compile Include="Import\ArmA2\SqmParser.cs" />
+    <Compile Include="StreamHelpers\IStreamToStringsReader.cs" />
+    <Compile Include="StreamHelpers\IStreamWriterAdapter.cs" />
+    <Compile Include="StreamHelpers\IStreamWriterFactory.cs" />
+    <Compile Include="StreamHelpers\StreamToStringsReader.cs" />
+    <Compile Include="StreamHelpers\StreamWriterAdapter.cs" />
+    <Compile Include="StreamHelpers\StreamWriterFactory.cs" />
+    <Compile Include="Common\Vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
