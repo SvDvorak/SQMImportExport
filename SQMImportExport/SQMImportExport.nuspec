@@ -13,6 +13,6 @@
     <tags>SQM Import Export ArmA</tags>
   </metadata>
   <files>
-    <file src="readme.txt" target="" />
+    <file src="..\README.txt" target="" />
   </files>
 </package>

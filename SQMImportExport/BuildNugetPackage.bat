@@ -1,1 +1,0 @@
-nuget pack SQMImportExport.csproj -Prop Configuration=Release
