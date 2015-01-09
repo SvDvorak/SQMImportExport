@@ -16,13 +16,13 @@ namespace SQMImportExport.ArmA3
         public double? Presence { get; set; }
         public int? Placement { get; set; }
         public double? Azimut { get; set; }
-        public double OffsetY { get; set; }
+        public double? OffsetY { get; set; }
         public string Special { get; set; }
         public int? Id { get; set; }
         public string Side { get; set; }
         public string VehicleName { get; set; }
         public string Player { get; set; }
-        public int ForceHeadlessClient { get; set; }
+        public int? ForceHeadlessClient { get; set; }
         public int? Leader { get; set; }
         public string Rank { get; set; }
         public double? Skill { get; set; }
