@@ -67,10 +67,14 @@ namespace SQMImportExport.Export.ArmA3
             intelString.Append(_propertyVisitor.Visit("timeOfChanges", intel.TimeOfChanges));
             intelString.Append(_propertyVisitor.Visit("startWeather", intel.StartWeather));
             intelString.Append(_propertyVisitor.Visit("startWind", intel.StartWind));
+            intelString.Append(_propertyVisitor.Visit("startWindDir", intel.StartWindDir));
             intelString.Append(_propertyVisitor.Visit("startWaves", intel.StartWaves));
+            intelString.Append(_propertyVisitor.Visit("startGust", intel.StartGust));
             intelString.Append(_propertyVisitor.Visit("forecastWeather", intel.ForecastWeather));
             intelString.Append(_propertyVisitor.Visit("forecastWind", intel.ForecastWind));
             intelString.Append(_propertyVisitor.Visit("forecastWaves", intel.ForecastWaves));
+            intelString.Append(_propertyVisitor.Visit("forecastGust", intel.ForecastGust));
+            intelString.Append(_propertyVisitor.Visit("forecastWindDir", intel.ForecastWindDir));
             intelString.Append(_propertyVisitor.Visit("forecastLightnings", intel.ForecastLightnings));
             intelString.Append(_propertyVisitor.Visit("rainForced", intel.RainForced));
             intelString.Append(_propertyVisitor.Visit("lightningsForced", intel.LightningsForced));
