@@ -25,6 +25,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
                 "id=4;\n",
                 "side=\"WEST\";\n",
                 "vehicle=\"US_Soldier_TL_EP1\";\n",
+                "isUAV=1;\n",
                 "player=\"PLAY CDG\";\n",
                 "forceHeadlessClient=1;\n",
                 "leader=1;\n",
@@ -141,6 +142,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(4, itemResult.Id);
             Assert.AreEqual("WEST", itemResult.Side);
             Assert.AreEqual("US_Soldier_TL_EP1", itemResult.VehicleName);
+            Assert.AreEqual(1, itemResult.IsUAV);
             Assert.AreEqual("PLAY CDG", itemResult.Player);
             Assert.AreEqual(1, itemResult.ForceHeadlessClient);
             Assert.AreEqual(1, itemResult.Leader);

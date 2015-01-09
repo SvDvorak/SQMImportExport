@@ -231,6 +231,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalVehicleText.Append("id=4;\n");
             originalVehicleText.Append("side=\"GUER\";\n");
             originalVehicleText.Append("vehicle=\"TK_GUE_Soldier_2_EP1\";\n");
+            originalVehicleText.Append("isUAV=1;\n");
             originalVehicleText.Append("player=\"PLAY CDG\";\n");
             originalVehicleText.Append("forceHeadlessClient=1;\n");
             originalVehicleText.Append("leader=1;\n");
@@ -256,6 +257,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             vehicle.Id = 4;
             vehicle.Side = "GUER";
             vehicle.VehicleName = "TK_GUE_Soldier_2_EP1";
+            vehicle.IsUAV = 1;
             vehicle.Player = "PLAY CDG";
             vehicle.ForceHeadlessClient = 1;
             vehicle.Leader = 1;

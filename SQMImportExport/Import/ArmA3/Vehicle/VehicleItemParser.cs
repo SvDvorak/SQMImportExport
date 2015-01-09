@@ -23,6 +23,7 @@ namespace SQMImportExport.Import.ArmA3.Vehicle
             LineSetters.Add(new IntegerPropertySetter("id", x => ParseResult.Id = x));
             LineSetters.Add(new StringPropertySetter("side", x => ParseResult.Side = x));
             LineSetters.Add(new StringPropertySetter("vehicle", x => ParseResult.VehicleName = x));
+            LineSetters.Add(new IntegerPropertySetter("isUAV", x => ParseResult.IsUAV = x));
             LineSetters.Add(new StringPropertySetter("player", x => ParseResult.Player = x));
             LineSetters.Add(new IntegerPropertySetter("forceHeadlessClient", x => ParseResult.ForceHeadlessClient = x));
             LineSetters.Add(new IntegerPropertySetter("leader", x => ParseResult.Leader = x));

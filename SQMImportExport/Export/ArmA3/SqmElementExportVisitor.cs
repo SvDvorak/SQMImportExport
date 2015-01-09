@@ -160,6 +160,7 @@ namespace SQMImportExport.Export.ArmA3
             stringBuilder.Append(_propertyVisitor.Visit("id", vehicle.Id));
             stringBuilder.Append(_propertyVisitor.Visit("side", vehicle.Side));
             stringBuilder.Append(_propertyVisitor.Visit("vehicle", vehicle.VehicleName));
+            stringBuilder.Append(_propertyVisitor.Visit("isUAV", vehicle.IsUAV));
             stringBuilder.Append(_propertyVisitor.Visit("player", vehicle.Player));
             stringBuilder.Append(_propertyVisitor.Visit("forceHeadlessClient", vehicle.ForceHeadlessClient));
             stringBuilder.Append(_propertyVisitor.Visit("leader", vehicle.Leader));

@@ -21,6 +21,7 @@ namespace SQMImportExport.ArmA3
         public int? Id { get; set; }
         public string Side { get; set; }
         public string VehicleName { get; set; }
+        public int? IsUAV { get; set; }
         public string Player { get; set; }
         public int? ForceHeadlessClient { get; set; }
         public int? Leader { get; set; }

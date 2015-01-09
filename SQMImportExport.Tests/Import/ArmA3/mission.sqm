@@ -95,6 +95,7 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_officer_F";
+					isUAV=1;
 					player="PLAYER COMMANDER";
 					forceHeadlessClient=1;
 					leader=1;
