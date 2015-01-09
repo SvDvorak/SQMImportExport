@@ -20,10 +20,13 @@ namespace SQMImportExport.Tests.Import.ArmA3
                 "position[]={5533.8467,143.18413,6350.1045};\n",
                 "placement=60;\n",
                 "azimut=17.206261;\n",
+                "offsetY=0.5;\n",
+                "special=\"NONE\";\n",
                 "id=4;\n",
                 "side=\"WEST\";\n",
                 "vehicle=\"US_Soldier_TL_EP1\";\n",
                 "player=\"PLAY CDG\";\n",
+                "forceHeadlessClient=1;\n",
                 "leader=1;\n",
                 "rank=\"CORPORAL\";\n",
                 "skill=0.60000002;\n",
@@ -133,10 +136,13 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(6350.1045, itemResult.Position.Z);
             Assert.AreEqual(60, itemResult.Placement);
             Assert.AreEqual(17.206261, itemResult.Azimut);
+            Assert.AreEqual(0.5, itemResult.OffsetY);
+            Assert.AreEqual("NONE", itemResult.Special);
             Assert.AreEqual(4, itemResult.Id);
             Assert.AreEqual("WEST", itemResult.Side);
             Assert.AreEqual("US_Soldier_TL_EP1", itemResult.VehicleName);
             Assert.AreEqual("PLAY CDG", itemResult.Player);
+            Assert.AreEqual(1, itemResult.ForceHeadlessClient);
             Assert.AreEqual(1, itemResult.Leader);
             Assert.AreEqual("CORPORAL", itemResult.Rank);
             Assert.AreEqual(0.60000002, itemResult.Skill);

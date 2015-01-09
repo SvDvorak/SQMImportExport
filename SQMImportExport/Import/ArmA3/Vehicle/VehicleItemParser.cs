@@ -18,10 +18,13 @@ namespace SQMImportExport.Import.ArmA3.Vehicle
             LineSetters.Add(new VectorPropertySetter("position", x => ParseResult.Position = x));
             LineSetters.Add(new IntegerPropertySetter("placement", x => ParseResult.Placement = x));
             LineSetters.Add(new DoublePropertySetter("azimut", x => ParseResult.Azimut = x));
+            LineSetters.Add(new DoublePropertySetter("offsetY", x => ParseResult.OffsetY = x));
+            LineSetters.Add(new StringPropertySetter("special", x => ParseResult.Special = x));
             LineSetters.Add(new IntegerPropertySetter("id", x => ParseResult.Id = x));
             LineSetters.Add(new StringPropertySetter("side", x => ParseResult.Side = x));
             LineSetters.Add(new StringPropertySetter("vehicle", x => ParseResult.VehicleName = x));
             LineSetters.Add(new StringPropertySetter("player", x => ParseResult.Player = x));
+            LineSetters.Add(new IntegerPropertySetter("forceHeadlessClient", x => ParseResult.ForceHeadlessClient = x));
             LineSetters.Add(new IntegerPropertySetter("leader", x => ParseResult.Leader = x));
             LineSetters.Add(new StringPropertySetter("rank", x => ParseResult.Rank = x));
             LineSetters.Add(new DoublePropertySetter("skill", x => ParseResult.Skill = x));
