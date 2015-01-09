@@ -52,10 +52,14 @@ namespace SQMImportExport.Tests.Import.ArmA3
                     "timeOfChanges=1800.0002;",
                     "startWeather=0.19207704;\n",
                     "startWind=1.14;",
+                    "startWindDir=20;",
                     "startWaves=0.1;",
+                    "startGust=0.099999994;",
                     "forecastWeather=0.25;\n",
                     "forecastWind=2.01;",
                     "forecastWaves=0.5;",
+                    "forecastGust=0.099999994;",
+                    "forecastWindDir=360;",
                     "forecastLightnings=0.1;",
                     "rainForced=1;",
                     "lightningsForced=1;",
@@ -82,10 +86,14 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(1800.0002, intelResult.TimeOfChanges);
             Assert.AreEqual(0.19207704, intelResult.StartWeather);
             Assert.AreEqual(1.14, intelResult.StartWind);
+            Assert.AreEqual(20, intelResult.StartWindDir);
             Assert.AreEqual(0.1, intelResult.StartWaves);
+            Assert.AreEqual(0.099999994, intelResult.StartGust);
             Assert.AreEqual(0.25, intelResult.ForecastWeather);
             Assert.AreEqual(2.01, intelResult.ForecastWind);
             Assert.AreEqual(0.5, intelResult.ForecastWaves);
+            Assert.AreEqual(0.099999994, intelResult.ForecastGust);
+            Assert.AreEqual(360, intelResult.ForecastWindDir);
             Assert.AreEqual(0.1, intelResult.ForecastLightnings);
             Assert.AreEqual(1, intelResult.RainForced);
             Assert.AreEqual(1, intelResult.LightningsForced);

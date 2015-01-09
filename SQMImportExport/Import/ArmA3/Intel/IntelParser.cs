@@ -14,10 +14,14 @@ namespace SQMImportExport.Import.ArmA3.Intel
             LineSetters.Add(new DoublePropertySetter("timeOfChanges", x => ParseResult.TimeOfChanges = x));
             LineSetters.Add(new DoublePropertySetter("startWeather", x => ParseResult.StartWeather = x));
             LineSetters.Add(new DoublePropertySetter("startWind", x => ParseResult.StartWind = x));
+            LineSetters.Add(new IntegerPropertySetter("startWindDir", x => ParseResult.StartWindDir = x));
             LineSetters.Add(new DoublePropertySetter("startWaves", x => ParseResult.StartWaves = x));
+            LineSetters.Add(new DoublePropertySetter("startGust", x => ParseResult.StartGust = x));
             LineSetters.Add(new DoublePropertySetter("forecastWeather", x => ParseResult.ForecastWeather = x));
             LineSetters.Add(new DoublePropertySetter("forecastWind", x => ParseResult.ForecastWind = x));
             LineSetters.Add(new DoublePropertySetter("forecastWaves", x => ParseResult.ForecastWaves = x));
+            LineSetters.Add(new DoublePropertySetter("forecastGust", x => ParseResult.ForecastGust = x));
+            LineSetters.Add(new IntegerPropertySetter("forecastWindDir", x => ParseResult.ForecastWindDir = x));
             LineSetters.Add(new DoublePropertySetter("forecastLightnings", x => ParseResult.ForecastLightnings = x));
             LineSetters.Add(new IntegerPropertySetter("rainForced", x => ParseResult.RainForced = x));
             LineSetters.Add(new IntegerPropertySetter("lightningsForced", x => ParseResult.LightningsForced = x));
