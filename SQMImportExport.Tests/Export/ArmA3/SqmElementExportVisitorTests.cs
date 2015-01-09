@@ -226,10 +226,13 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalVehicleText.Append("position[]={10,12,14};\n");
             originalVehicleText.Append("placement=30;\n");
             originalVehicleText.Append("azimut=3.14;\n");
+            originalVehicleText.Append("offsetY=2.32;\n");
+            originalVehicleText.Append("special=\"NONE\";\n");
             originalVehicleText.Append("id=4;\n");
             originalVehicleText.Append("side=\"GUER\";\n");
             originalVehicleText.Append("vehicle=\"TK_GUE_Soldier_2_EP1\";\n");
             originalVehicleText.Append("player=\"PLAY CDG\";\n");
+            originalVehicleText.Append("forceHeadlessClient=1;\n");
             originalVehicleText.Append("leader=1;\n");
             originalVehicleText.Append("lock=\"UNLOCKED\";\n");
             originalVehicleText.Append("rank=\"CORPORAL\";\n");
@@ -248,10 +251,13 @@ namespace SQMImportExport.Tests.Export.ArmA3
             vehicle.Position = new Vector(10, 12, 14);
             vehicle.Placement = 30;
             vehicle.Azimut = 3.14;
+            vehicle.OffsetY = 2.32;
+            vehicle.Special = "NONE";
             vehicle.Id = 4;
             vehicle.Side = "GUER";
             vehicle.VehicleName = "TK_GUE_Soldier_2_EP1";
             vehicle.Player = "PLAY CDG";
+            vehicle.ForceHeadlessClient = 1;
             vehicle.Leader = 1;
             vehicle.Lock = "UNLOCKED";
             vehicle.Rank = "CORPORAL";

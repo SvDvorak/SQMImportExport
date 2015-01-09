@@ -155,10 +155,13 @@ namespace SQMImportExport.Export.ArmA3
             stringBuilder.Append(_propertyVisitor.Visit("position", vehicle.Position));
             stringBuilder.Append(_propertyVisitor.Visit("placement", vehicle.Placement));
             stringBuilder.Append(_propertyVisitor.Visit("azimut", vehicle.Azimut));
+            stringBuilder.Append(_propertyVisitor.Visit("offsetY", vehicle.OffsetY));
+            stringBuilder.Append(_propertyVisitor.Visit("special", vehicle.Special));
             stringBuilder.Append(_propertyVisitor.Visit("id", vehicle.Id));
             stringBuilder.Append(_propertyVisitor.Visit("side", vehicle.Side));
             stringBuilder.Append(_propertyVisitor.Visit("vehicle", vehicle.VehicleName));
             stringBuilder.Append(_propertyVisitor.Visit("player", vehicle.Player));
+            stringBuilder.Append(_propertyVisitor.Visit("forceHeadlessClient", vehicle.ForceHeadlessClient));
             stringBuilder.Append(_propertyVisitor.Visit("leader", vehicle.Leader));
             stringBuilder.Append(_propertyVisitor.Visit("lock", vehicle.Lock));
             stringBuilder.Append(_propertyVisitor.Visit("rank", vehicle.Rank));
