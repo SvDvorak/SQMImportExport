@@ -21,5 +21,8 @@ Use the Export function on the SqmExporter to export an SqmContentsBase instance
 	exportStream.Close()
 
 #Release Notes
+Version 0.2
+- Added StartWindDir, StartGust, ForecastGust, ForecastWindDir to Intel and OffsetY, Special, ForceHeadlessClient and IsUAV to Vehicle.
+
 Version 0.1
 - Initial release

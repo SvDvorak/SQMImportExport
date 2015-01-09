@@ -2,18 +2,18 @@
 <package >
   <metadata>
     <id>SQMImportExport</id>
-    <version>0.1</version>
+    <version>0.2</version>
     <title>SQM Import Export</title>
     <authors>Andreas Wilcox</authors>
     <owners>Andreas Wilcox</owners>
     <licenseUrl>https://github.com/SvDvorak/SQMImportExport/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/SvDvorak/SQMImportExport</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This package contains an assembly for importing and exporting ArmA mission files (SQM-files). Both ArmA 2 and ArmA 3 versions are supported but might not be complete, contact me if you are unable to import a mission that should work.</description>
+    <description>This package contains an assembly for importing and exporting ArmA mission files (SQM-files). Both ArmA 2 and ArmA 3 versions are supported but might not be complete, contact me at UnknownBum at google mail if you are unable to import a mission that should work.</description>
     <copyright>Copyright 2014</copyright>
     <tags>SQM Import Export ArmA</tags>
   </metadata>
   <files>
-    <file src="..\README.txt" target="" />
+    <file src="..\README.md" target="" />
   </files>
 </package>
