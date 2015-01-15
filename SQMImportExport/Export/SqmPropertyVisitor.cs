@@ -26,8 +26,8 @@ namespace SQMImportExport.Export
 
             return propertyName + "[]={" +
                 value.X.ToStringInvariant() + "," +
-                value.Y.ToStringInvariant() + "," +
-                value.Z.ToStringInvariant() + "};\n";
+                value.Z.ToStringInvariant() + "," +
+                value.Y.ToStringInvariant() + "};\n";
         }
 
         public string Visit(string propertyName, int? nullableValue)
