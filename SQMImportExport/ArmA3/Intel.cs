@@ -11,7 +11,6 @@
         public double? StartWaves { get; set; }
         public double? StartGust { get; set; }
         public double? ForecastWeather { get; set; }
-        public double? ForecastFog { get; set; }
         public double? ForecastWind { get; set; }
         public double? ForecastWaves { get; set; }
         public double? ForecastGust { get; set; }
