@@ -19,6 +19,10 @@ namespace SQMImportExport.Tests.Import.ArmA3
                 "placement=100;",
                 "completitionRadius=150;",
                 "type=\"DISMISS\";",
+                "combatMode=\"YELLOW\";",
+                "formation=\"COLUMN\";",
+                "speed=\"FULL\";",
+                "combat=\"COMBAT\";",
                 "expActiv=\"op_h1;\";",
                 "timeoutMin=300;",
                 "timeoutMid=301;",
@@ -67,6 +71,10 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(100, waypoint.Placement);
             Assert.AreEqual(150, waypoint.CompletitionRadius);
             Assert.AreEqual("DISMISS", waypoint.Type);
+            Assert.AreEqual("YELLOW", waypoint.CombatMode);
+            Assert.AreEqual("COLUMN", waypoint.Formation);
+            Assert.AreEqual("FULL", waypoint.Speed);
+            Assert.AreEqual("COMBAT", waypoint.Combat);
             Assert.AreEqual("op_h1;", waypoint.ExpActiv);
             Assert.AreEqual(300, waypoint.TimeoutMin);
             Assert.AreEqual(301, waypoint.TimeoutMid);

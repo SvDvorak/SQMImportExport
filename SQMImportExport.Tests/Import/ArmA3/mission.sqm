@@ -129,6 +129,10 @@ class Mission
 					placement=10;
 					completitionRadius=20;
 					type="CYCLE";
+					combatMode="YELLOW";
+					formation="COLUMN";
+					speed="FULL";
+					combat="COMBAT";
 					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 					class Effects
 					{

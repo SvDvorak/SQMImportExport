@@ -13,6 +13,10 @@ namespace SQMImportExport.ArmA3
         public int? Placement { get; set; }
         public int? CompletitionRadius { get; set; }
         public string Type { get; set; }
+        public string CombatMode { get; set; }
+        public string Formation { get; set; }
+        public string Speed { get; set; }
+        public string Combat { get; set; }
         public string ExpActiv { get; set; }
         public List<string> Effects { get; set; }
         public int? TimeoutMin { get; set; }

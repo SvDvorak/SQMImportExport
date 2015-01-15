@@ -197,6 +197,10 @@ namespace SQMImportExport.Export.ArmA3
             stringBuilder.Append(_propertyVisitor.Visit("placement", waypoint.Placement));
             stringBuilder.Append(_propertyVisitor.Visit("completitionRadius", waypoint.CompletitionRadius));
             stringBuilder.Append(_propertyVisitor.Visit("type", waypoint.Type));
+            stringBuilder.Append(_propertyVisitor.Visit("combatMode", waypoint.CombatMode));
+            stringBuilder.Append(_propertyVisitor.Visit("formation", waypoint.Formation));
+            stringBuilder.Append(_propertyVisitor.Visit("speed", waypoint.Speed));
+            stringBuilder.Append(_propertyVisitor.Visit("combat", waypoint.Combat));
             stringBuilder.Append(_propertyVisitor.Visit("expActiv", waypoint.ExpActiv));
             stringBuilder.Append(_propertyVisitor.VisitEffects(waypoint.Effects));
             stringBuilder.Append(_propertyVisitor.Visit("timeoutMin", waypoint.TimeoutMin));

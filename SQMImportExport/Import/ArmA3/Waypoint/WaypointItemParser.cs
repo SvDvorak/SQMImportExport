@@ -15,6 +15,10 @@ namespace SQMImportExport.Import.ArmA3.Waypoint
             LineSetters.Add(new IntegerPropertySetter("placement", x => ParseResult.Placement = x));
             LineSetters.Add(new IntegerPropertySetter("completitionRadius", x => ParseResult.CompletitionRadius = x));
             LineSetters.Add(new StringPropertySetter("type", x => ParseResult.Type = x));
+            LineSetters.Add(new StringPropertySetter("combatMode", x => ParseResult.CombatMode = x));
+            LineSetters.Add(new StringPropertySetter("formation", x => ParseResult.Formation = x));
+            LineSetters.Add(new StringPropertySetter("speed", x => ParseResult.Speed = x));
+            LineSetters.Add(new StringPropertySetter("combat", x => ParseResult.Combat = x));
             LineSetters.Add(new StringPropertySetter("expActiv", x => ParseResult.ExpActiv = x));
             LineSetters.Add(new IntegerPropertySetter("timeoutMin", x => ParseResult.TimeoutMin = x));
             LineSetters.Add(new IntegerPropertySetter("timeoutMid", x => ParseResult.TimeoutMid = x));

@@ -365,6 +365,10 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalItemsText.Append("placement=100;\n");
             originalItemsText.Append("completitionRadius=150;\n");
             originalItemsText.Append("type=\"DISMISS\";\n");
+            originalItemsText.Append("combatMode=\"YELLOW\";\n");
+            originalItemsText.Append("formation=\"COLUMN\";\n");
+            originalItemsText.Append("speed=\"FULL\";\n");
+            originalItemsText.Append("combat=\"COMBAT\";\n");
             originalItemsText.Append("expActiv=\"op_h1;\";\n");
             originalItemsText.Append("class Effects\n");
             originalItemsText.Append("{\n");
@@ -386,6 +390,10 @@ namespace SQMImportExport.Tests.Export.ArmA3
                 Placement = 100,
                 CompletitionRadius = 150,
                 Type = "DISMISS",
+                CombatMode = "YELLOW",
+                Formation = "COLUMN",
+                Speed = "FULL",
+                Combat = "COMBAT",
                 ExpActiv = "op_h1;",
                 Effects = new List<string> { "titleEffect=\"PLAIN DOWN\";", "otherText" },
                 TimeoutMin = 300,
