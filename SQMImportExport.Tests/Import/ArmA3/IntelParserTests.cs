@@ -56,6 +56,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
                     "startWaves=0.1;",
                     "startGust=0.099999994;",
                     "forecastWeather=0.25;\n",
+                    "forecastFog=0.11;",
                     "forecastWind=2.01;",
                     "forecastWaves=0.5;",
                     "forecastGust=0.099999994;",
@@ -90,6 +91,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(0.1, intelResult.StartWaves);
             Assert.AreEqual(0.099999994, intelResult.StartGust);
             Assert.AreEqual(0.25, intelResult.ForecastWeather);
+            Assert.AreEqual(0.11, intelResult.ForecastFog);
             Assert.AreEqual(2.01, intelResult.ForecastWind);
             Assert.AreEqual(0.5, intelResult.ForecastWaves);
             Assert.AreEqual(0.099999994, intelResult.ForecastGust);
