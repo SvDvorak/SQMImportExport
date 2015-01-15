@@ -18,6 +18,7 @@ namespace SQMImportExport.Import.ArmA3.Intel
             LineSetters.Add(new DoublePropertySetter("startWaves", x => ParseResult.StartWaves = x));
             LineSetters.Add(new DoublePropertySetter("startGust", x => ParseResult.StartGust = x));
             LineSetters.Add(new DoublePropertySetter("forecastWeather", x => ParseResult.ForecastWeather = x));
+            LineSetters.Add(new DoublePropertySetter("forecastFog", x => ParseResult.ForecastFog = x));
             LineSetters.Add(new DoublePropertySetter("forecastWind", x => ParseResult.ForecastWind = x));
             LineSetters.Add(new DoublePropertySetter("forecastWaves", x => ParseResult.ForecastWaves = x));
             LineSetters.Add(new DoublePropertySetter("forecastGust", x => ParseResult.ForecastGust = x));
