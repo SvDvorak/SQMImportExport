@@ -14,7 +14,7 @@ namespace SQMImportExport.Tests.Export
             var propertyVisitor = new SqmPropertyVisitor();
 
             var stringPropertyText = propertyVisitor.Visit("side", "WEST");
-            var vectorPropertyText = propertyVisitor.Visit("position", new Vector(1, 3, 2));
+            var vectorPropertyText = propertyVisitor.Visit("position", new Vector(1, 2, 3));
             var intPropertyText = propertyVisitor.Visit("leader", 1);
             var doublePropertyText = propertyVisitor.Visit("skill", 0.60000002);
             var intListPropertyText = propertyVisitor.Visit("synchronizations", new List<int>() { 1, 2, 3 });

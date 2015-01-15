@@ -148,8 +148,8 @@ namespace SQMImportExport.Tests.Import.ArmA2
             Assert.AreEqual(0.256, itemResult.Presence);
             Assert.AreEqual("(ns_Waves==(ns_WavesLimit-2));", itemResult.PresenceCondition);
             Assert.AreEqual(5533.8467, itemResult.Position.X);
-            Assert.AreEqual(6350.1045, itemResult.Position.Y);
-            Assert.AreEqual(143.18413, itemResult.Position.Z);
+            Assert.AreEqual(143.18413, itemResult.Position.Y);
+            Assert.AreEqual(6350.1045, itemResult.Position.Z);
             Assert.AreEqual(17.206261, itemResult.Azimut);
             Assert.AreEqual(60, itemResult.Placement);
             Assert.AreEqual("CARGO", itemResult.Special);

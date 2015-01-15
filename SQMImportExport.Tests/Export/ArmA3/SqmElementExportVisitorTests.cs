@@ -249,7 +249,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var vehicle = new Vehicle();
             vehicle.Number = 3;
             vehicle.Presence = 1.19;
-            vehicle.Position = new Vector(10, 14, 12);
+            vehicle.Position = new Vector(10, 12, 14);
             vehicle.Placement = 30;
             vehicle.Azimut = 3.14;
             vehicle.OffsetY = 2.32;
@@ -386,7 +386,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var waypoint = new Waypoint
             {
                 Number = 0,
-                Position = new Vector(4083.6555, 11750.772, 25.784687),
+                Position = new Vector(4083.6555, 25.784687, 11750.772),
                 Placement = 100,
                 CompletitionRadius = 150,
                 Type = "DISMISS",
@@ -430,7 +430,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var marker = new Marker();
 
             marker.Number = 4;
-            marker.Position = new Vector(10, 14, 12);
+            marker.Position = new Vector(10, 12, 14);
             marker.Name = "mkrInsertion";
             marker.Text = "INSERTION";
             marker.MarkerType = "RECTANGLE";
@@ -473,7 +473,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var sensor = new Sensor();
 
             sensor.Number = 5;
-            sensor.Position = new Vector(10, 14, 12);
+            sensor.Position = new Vector(10, 12, 14);
             sensor.A = 4.5;
             sensor.B = 5.5;
             sensor.ActivationBy = "ANY";

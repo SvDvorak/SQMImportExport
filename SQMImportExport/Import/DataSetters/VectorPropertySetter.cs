@@ -20,8 +20,8 @@ namespace SQMImportExport.Import.DataSetters
         protected override void SetPropertyValues(List<string> values)
         {
             var xPos = double.Parse(values[0], _doubleFormatInfo);
-            var yPos = double.Parse(values[2], _doubleFormatInfo);
-            var zPos = double.Parse(values[1], _doubleFormatInfo);
+            var yPos = double.Parse(values[1], _doubleFormatInfo);
+            var zPos = double.Parse(values[2], _doubleFormatInfo);
 
             PropertySetter(new Vector(xPos, yPos, zPos));
         }
