@@ -21,6 +21,9 @@ Use the Export function on the SqmExporter to export an SqmContentsBase instance
 	exportStream.Close()
 
 #Release Notes
+Version 0.3
+- Added CombatMode, Formation, Speed, Combat to Waypoint.
+
 Version 0.2
 - Added StartWindDir, StartGust, ForecastGust, ForecastWindDir to Intel and OffsetY, Special, ForceHeadlessClient and IsUAV to Vehicle.
 

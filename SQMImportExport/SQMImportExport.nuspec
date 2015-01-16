@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SQMImportExport</id>
-    <version>0.2</version>
+    <version>0.3</version>
     <title>SQM Import Export</title>
     <authors>Andreas Wilcox</authors>
     <owners>Andreas Wilcox</owners>
