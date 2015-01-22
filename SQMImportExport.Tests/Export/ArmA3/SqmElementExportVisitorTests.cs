@@ -160,6 +160,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalIntelText.Append("startWaves=0.42;\n");
             originalIntelText.Append("startGust=0.0994;\n");
             originalIntelText.Append("forecastWeather=0.25;\n");
+            originalIntelText.Append("forecastFog=0.11;\n");
             originalIntelText.Append("forecastWind=0.8;\n");
             originalIntelText.Append("forecastWaves=0.2;\n");
             originalIntelText.Append("forecastGust=0.0999;\n");
@@ -191,6 +192,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             intel.StartWaves = 0.42;
             intel.StartGust = 0.0994;
             intel.ForecastWeather = 0.25;
+            intel.ForecastFog = 0.11;
             intel.ForecastWind = 0.8;
             intel.ForecastWaves = 0.2;
             intel.ForecastGust = 0.0999;
