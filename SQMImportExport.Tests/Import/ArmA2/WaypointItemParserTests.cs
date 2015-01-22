@@ -74,8 +74,8 @@ namespace SQMImportExport.Tests.Import.ArmA2
             var waypoint = _sut.ParseContext(context);
 
             Assert.AreEqual(4083.6555, waypoint.Position.X);
-            Assert.AreEqual(25.784687, waypoint.Position.Y);
-            Assert.AreEqual(11750.772, waypoint.Position.Z);
+            Assert.AreEqual(11750.772, waypoint.Position.Y);
+            Assert.AreEqual(25.784687, waypoint.Position.Z);
             Assert.AreEqual(194, waypoint.Id);
             Assert.AreEqual(70594, waypoint.IdStatic);
             Assert.AreEqual(-166, waypoint.IdObject);

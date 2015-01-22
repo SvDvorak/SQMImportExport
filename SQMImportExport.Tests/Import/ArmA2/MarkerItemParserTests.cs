@@ -47,8 +47,8 @@ namespace SQMImportExport.Tests.Import.ArmA2
 
             Assert.AreEqual(0, markerResult.Number);
             Assert.AreEqual(414, markerResult.Position.X);
-            Assert.AreEqual(16, markerResult.Position.Y);
-            Assert.AreEqual(412, markerResult.Position.Z);
+            Assert.AreEqual(412, markerResult.Position.Y);
+            Assert.AreEqual(16, markerResult.Position.Z);
             Assert.AreEqual("TargetAreaCenter", markerResult.Name);
             Assert.AreEqual("Destroy equipment", markerResult.Text);
             Assert.AreEqual("ELLIPSE", markerResult.MarkerType);

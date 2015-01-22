@@ -26,8 +26,8 @@ namespace SQMImportExport.Tests.Import
 
             Assert.AreEqual(Result.Success, matchResult);
             Assert.AreEqual(5533.8467, _value.X);
-            Assert.AreEqual(143.18413, _value.Y);
-            Assert.AreEqual(6350.1045, _value.Z);
+            Assert.AreEqual(6350.1045, _value.Y);
+            Assert.AreEqual(143.18413, _value.Z);
         }
 
         [Test]

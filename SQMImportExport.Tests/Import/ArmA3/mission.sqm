@@ -57,6 +57,7 @@ class Mission
 		startWaves=0.12;
 		startGust=0.099999994;
 		forecastWeather=1;
+		forecastFog=0.11;
 		forecastWind=0;
 		forecastWaves=0;
 		forecastGust=0.099999994;

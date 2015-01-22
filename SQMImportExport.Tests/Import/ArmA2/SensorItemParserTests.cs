@@ -59,8 +59,8 @@ namespace SQMImportExport.Tests.Import.ArmA2
 
             Assert.AreEqual(0, sensorResult.Number);
             Assert.AreEqual(414, sensorResult.Position.X);
-            Assert.AreEqual(16, sensorResult.Position.Y);
-            Assert.AreEqual(413, sensorResult.Position.Z);
+            Assert.AreEqual(413, sensorResult.Position.Y);
+            Assert.AreEqual(16, sensorResult.Position.Z);
             Assert.AreEqual(4.4, sensorResult.A);
             Assert.AreEqual(3.3, sensorResult.B);
             Assert.AreEqual(20.8573, sensorResult.Angle);
