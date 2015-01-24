@@ -153,11 +153,13 @@ namespace SQMImportExport.Export.ArmA3
             stringBuilder.Append("class " + elementName + vehicle.Number + "\n");
             stringBuilder.Append("{\n");
             stringBuilder.Append(_propertyVisitor.Visit("presence", vehicle.Presence));
+            stringBuilder.Append(_propertyVisitor.Visit("presenceCondition", vehicle.PresenceCondition));
             stringBuilder.Append(_propertyVisitor.Visit("position", vehicle.Position));
             stringBuilder.Append(_propertyVisitor.Visit("placement", vehicle.Placement));
             stringBuilder.Append(_propertyVisitor.Visit("azimut", vehicle.Azimut));
             stringBuilder.Append(_propertyVisitor.Visit("offsetY", vehicle.OffsetY));
             stringBuilder.Append(_propertyVisitor.Visit("special", vehicle.Special));
+            stringBuilder.Append(_propertyVisitor.Visit("age", vehicle.Age));
             stringBuilder.Append(_propertyVisitor.Visit("id", vehicle.Id));
             stringBuilder.Append(_propertyVisitor.Visit("side", vehicle.Side));
             stringBuilder.Append(_propertyVisitor.Visit("vehicle", vehicle.VehicleName));
@@ -173,6 +175,7 @@ namespace SQMImportExport.Export.ArmA3
             stringBuilder.Append(_propertyVisitor.Visit("text", vehicle.Text));
             stringBuilder.Append(_propertyVisitor.Visit("init", vehicle.Init));
             stringBuilder.Append(_propertyVisitor.Visit("description", vehicle.Description));
+            stringBuilder.Append(_propertyVisitor.Visit("syncId", vehicle.SyncID));
             stringBuilder.Append(_propertyVisitor.Visit("synchronizations", vehicle.Synchronizations));
 
             stringBuilder.Append(Visit("Vehicles", vehicle.Vehicles.Cast<Vehicle>()));
