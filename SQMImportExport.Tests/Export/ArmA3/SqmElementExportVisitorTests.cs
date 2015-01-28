@@ -160,6 +160,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalIntelText.Append("startWaves=0.42;\n");
             originalIntelText.Append("startGust=0.0994;\n");
             originalIntelText.Append("forecastWeather=0.25;\n");
+            originalIntelText.Append("forecastFog=0.11;\n");
             originalIntelText.Append("forecastWind=0.8;\n");
             originalIntelText.Append("forecastWaves=0.2;\n");
             originalIntelText.Append("forecastGust=0.0999;\n");
@@ -191,6 +192,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             intel.StartWaves = 0.42;
             intel.StartGust = 0.0994;
             intel.ForecastWeather = 0.25;
+            intel.ForecastFog = 0.11;
             intel.ForecastWind = 0.8;
             intel.ForecastWaves = 0.2;
             intel.ForecastGust = 0.0999;
@@ -249,7 +251,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var vehicle = new Vehicle();
             vehicle.Number = 3;
             vehicle.Presence = 1.19;
-            vehicle.Position = new Vector(10, 12, 14);
+            vehicle.Position = new Vector(10, 14, 12);
             vehicle.Placement = 30;
             vehicle.Azimut = 3.14;
             vehicle.OffsetY = 2.32;
@@ -386,7 +388,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var waypoint = new Waypoint
             {
                 Number = 0,
-                Position = new Vector(4083.6555, 25.784687, 11750.772),
+                Position = new Vector(4083.6555, 11750.772, 25.784687),
                 Placement = 100,
                 CompletitionRadius = 150,
                 Type = "DISMISS",
@@ -430,7 +432,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var marker = new Marker();
 
             marker.Number = 4;
-            marker.Position = new Vector(10, 12, 14);
+            marker.Position = new Vector(10, 14, 12);
             marker.Name = "mkrInsertion";
             marker.Text = "INSERTION";
             marker.MarkerType = "RECTANGLE";
@@ -473,7 +475,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             var sensor = new Sensor();
 
             sensor.Number = 5;
-            sensor.Position = new Vector(10, 12, 14);
+            sensor.Position = new Vector(10, 14, 12);
             sensor.A = 4.5;
             sensor.B = 5.5;
             sensor.ActivationBy = "ANY";
