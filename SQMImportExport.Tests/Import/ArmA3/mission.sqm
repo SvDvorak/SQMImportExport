@@ -88,11 +88,13 @@ class Mission
 				class Item0
 				{
 					presence=0.77276766;
+					presenceCondition="false";
 					position[]={21114.061,17.466579,7606.3511};
 					placement=15;
 					azimut=-794.64697;
 					offsetY=2;
 					special="NONE";
+					age="120 MIN";
 					id=0;
 					side="WEST";
 					vehicle="B_officer_F";
@@ -106,6 +108,8 @@ class Mission
 					text="UnitNATO_CO";
 					init="GrpNATO_CO = group this; nul = [""co"",this] call f_fnc_folk_assignGear ;";
 					description="NATO Commander";
+					syncId=0;
+					synchronizations[]={1};
 				};
 				class Item1
 				{

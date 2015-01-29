@@ -14,10 +14,12 @@ namespace SQMImportExport.ArmA3
         }
 
         public double? Presence { get; set; }
+        public string PresenceCondition { get; set; }
         public int? Placement { get; set; }
         public double? Azimut { get; set; }
         public double? OffsetY { get; set; }
         public string Special { get; set; }
+        public string Age { get; set; }
         public int? Id { get; set; }
         public string Side { get; set; }
         public string VehicleName { get; set; }
@@ -33,6 +35,7 @@ namespace SQMImportExport.ArmA3
         public string Text { get; set; }
         public string Init { get; set; }
         public string Description { get; set; }
+        public int? SyncId { get; set; }
         public List<int> Synchronizations { get; set; }
 
         public new IEnumerable<Vehicle> Vehicles

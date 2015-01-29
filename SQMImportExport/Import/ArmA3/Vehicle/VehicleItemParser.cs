@@ -15,11 +15,13 @@ namespace SQMImportExport.Import.ArmA3.Vehicle
             ContextSetters.Add(new ContextSetter<List<SQMImportExport.ArmA3.Waypoint>>(waypointsParser, x => ParseResult.Waypoints = x));
 
             LineSetters.Add(new DoublePropertySetter("presence", x => ParseResult.Presence = x));
+            LineSetters.Add(new StringPropertySetter("presenceCondition", x => ParseResult.PresenceCondition = x));
             LineSetters.Add(new VectorPropertySetter("position", x => ParseResult.Position = x));
             LineSetters.Add(new IntegerPropertySetter("placement", x => ParseResult.Placement = x));
             LineSetters.Add(new DoublePropertySetter("azimut", x => ParseResult.Azimut = x));
             LineSetters.Add(new DoublePropertySetter("offsetY", x => ParseResult.OffsetY = x));
             LineSetters.Add(new StringPropertySetter("special", x => ParseResult.Special = x));
+            LineSetters.Add(new StringPropertySetter("age", x => ParseResult.Age = x));
             LineSetters.Add(new IntegerPropertySetter("id", x => ParseResult.Id = x));
             LineSetters.Add(new StringPropertySetter("side", x => ParseResult.Side = x));
             LineSetters.Add(new StringPropertySetter("vehicle", x => ParseResult.VehicleName = x));
@@ -35,6 +37,7 @@ namespace SQMImportExport.Import.ArmA3.Vehicle
             LineSetters.Add(new StringPropertySetter("text", x => ParseResult.Text = x));
             LineSetters.Add(new StringPropertySetter("init", x => ParseResult.Init = x));
             LineSetters.Add(new StringPropertySetter("description", x => ParseResult.Description = x));
+            LineSetters.Add(new IntegerPropertySetter("syncId", x => ParseResult.SyncId = x));
             LineSetters.Add(new IntegerListPropertySetter("synchronizations", x => ParseResult.Synchronizations = x));
         }
     }

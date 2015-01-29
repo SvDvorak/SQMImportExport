@@ -17,11 +17,13 @@ namespace SQMImportExport.Tests.Import.ArmA3
                 "class Item5\n",
                 "{\n",
                 "presence=0.256;",
+                "presenceCondition=\"false\";\n",
                 "position[]={5533.8467,143.18413,6350.1045};\n",
                 "placement=60;\n",
                 "azimut=17.206261;\n",
                 "offsetY=0.5;\n",
                 "special=\"NONE\";\n",
+                "age=\"120 MIN\";\n",
                 "id=4;\n",
                 "side=\"WEST\";\n",
                 "vehicle=\"US_Soldier_TL_EP1\";\n",
@@ -37,6 +39,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
                 "text=\"UnitUS_Alpha_FTL\";\n",
                 "init=\"GrpUS_Alpha = group this; nul = [\"ftl\",this] execVM \"f\\common\\folk_assignGear.sqf\";\";\n",
                 "description=\"US Army Alpha Fireteam Leader\";\n",
+                "syncId=4;\n",
                 "synchronizations[]={116,117};\n",
                 "};"
             };
@@ -132,6 +135,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
 
             Assert.AreEqual(5, itemResult.Number);
             Assert.AreEqual(0.256, itemResult.Presence);
+            Assert.AreEqual("false", itemResult.PresenceCondition);
             Assert.AreEqual(5533.8467, itemResult.Position.X);
             Assert.AreEqual(6350.1045, itemResult.Position.Y);
             Assert.AreEqual(143.18413, itemResult.Position.Z);
@@ -139,6 +143,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(17.206261, itemResult.Azimut);
             Assert.AreEqual(0.5, itemResult.OffsetY);
             Assert.AreEqual("NONE", itemResult.Special);
+            Assert.AreEqual("120 MIN", itemResult.Age);
             Assert.AreEqual(4, itemResult.Id);
             Assert.AreEqual("WEST", itemResult.Side);
             Assert.AreEqual("US_Soldier_TL_EP1", itemResult.VehicleName);
@@ -155,6 +160,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(@"GrpUS_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";",
                 itemResult.Init);
             Assert.AreEqual("US Army Alpha Fireteam Leader", itemResult.Description);
+            Assert.AreEqual(4, itemResult.SyncId);
             Assert.AreEqual(116, itemResult.Synchronizations[0]);
             Assert.AreEqual(117, itemResult.Synchronizations[1]);
         }

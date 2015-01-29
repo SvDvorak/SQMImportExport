@@ -225,11 +225,13 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalVehicleText.Append("class Item3\n");
             originalVehicleText.Append("{\n");
             originalVehicleText.Append("presence=1.19;\n");
+            originalVehicleText.Append("presenceCondition=\"false\";\n");
             originalVehicleText.Append("position[]={10,12,14};\n");
             originalVehicleText.Append("placement=30;\n");
             originalVehicleText.Append("azimut=3.14;\n");
             originalVehicleText.Append("offsetY=2.32;\n");
             originalVehicleText.Append("special=\"NONE\";\n");
+            originalVehicleText.Append("age=\"120 MIN\";\n");
             originalVehicleText.Append("id=4;\n");
             originalVehicleText.Append("side=\"GUER\";\n");
             originalVehicleText.Append("vehicle=\"TK_GUE_Soldier_2_EP1\";\n");
@@ -245,17 +247,20 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalVehicleText.Append("text=\"UnitGUE_MTR1_AG\";\n");
             originalVehicleText.Append("init=\"GrpGUE_MTR1 = group this; nul = [\"mtrag\",this] execVM \"f\\common\\folk_assignGear.sqf\";\";\n");
             originalVehicleText.Append("description=\"TK Local Mortar Team 1 Assistant Gunner\";\n");
+            originalVehicleText.Append("syncId=4;\n");
             originalVehicleText.Append("synchronizations[]={1,2,3};\n");
             originalVehicleText.Append("};\n");
 
             var vehicle = new Vehicle();
             vehicle.Number = 3;
             vehicle.Presence = 1.19;
+            vehicle.PresenceCondition = "false";
             vehicle.Position = new Vector(10, 14, 12);
             vehicle.Placement = 30;
             vehicle.Azimut = 3.14;
             vehicle.OffsetY = 2.32;
             vehicle.Special = "NONE";
+            vehicle.Age = "120 MIN";
             vehicle.Id = 4;
             vehicle.Side = "GUER";
             vehicle.VehicleName = "TK_GUE_Soldier_2_EP1";
@@ -271,6 +276,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             vehicle.Text = "UnitGUE_MTR1_AG";
             vehicle.Init = "GrpGUE_MTR1 = group this; nul = [\"mtrag\",this] execVM \"f\\common\\folk_assignGear.sqf\";";
             vehicle.Description = "TK Local Mortar Team 1 Assistant Gunner";
+            vehicle.SyncId = 4;
             vehicle.Synchronizations = new List<int> { 1, 2, 3 };
 
             var actualVehicleText = _exportVisitor.Visit("Item", vehicle);
