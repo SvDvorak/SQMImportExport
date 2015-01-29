@@ -37,7 +37,7 @@ namespace SQMImportExport.Import.ArmA3.Vehicle
             LineSetters.Add(new StringPropertySetter("text", x => ParseResult.Text = x));
             LineSetters.Add(new StringPropertySetter("init", x => ParseResult.Init = x));
             LineSetters.Add(new StringPropertySetter("description", x => ParseResult.Description = x));
-            LineSetters.Add(new IntegerPropertySetter("syncId", x => ParseResult.SyncID = x));
+            LineSetters.Add(new IntegerPropertySetter("syncId", x => ParseResult.SyncId = x));
             LineSetters.Add(new IntegerListPropertySetter("synchronizations", x => ParseResult.Synchronizations = x));
         }
     }

@@ -35,7 +35,7 @@ namespace SQMImportExport.ArmA3
         public string Text { get; set; }
         public string Init { get; set; }
         public string Description { get; set; }
-        public int? SyncID { get; set; }
+        public int? SyncId { get; set; }
         public List<int> Synchronizations { get; set; }
 
         public new IEnumerable<Vehicle> Vehicles

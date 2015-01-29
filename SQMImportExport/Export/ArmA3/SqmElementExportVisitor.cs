@@ -175,7 +175,7 @@ namespace SQMImportExport.Export.ArmA3
             stringBuilder.Append(_propertyVisitor.Visit("text", vehicle.Text));
             stringBuilder.Append(_propertyVisitor.Visit("init", vehicle.Init));
             stringBuilder.Append(_propertyVisitor.Visit("description", vehicle.Description));
-            stringBuilder.Append(_propertyVisitor.Visit("syncId", vehicle.SyncID));
+            stringBuilder.Append(_propertyVisitor.Visit("syncId", vehicle.SyncId));
             stringBuilder.Append(_propertyVisitor.Visit("synchronizations", vehicle.Synchronizations));
 
             stringBuilder.Append(Visit("Vehicles", vehicle.Vehicles.Cast<Vehicle>()));

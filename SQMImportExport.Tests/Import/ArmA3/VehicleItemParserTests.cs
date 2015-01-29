@@ -39,7 +39,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
                 "text=\"UnitUS_Alpha_FTL\";\n",
                 "init=\"GrpUS_Alpha = group this; nul = [\"ftl\",this] execVM \"f\\common\\folk_assignGear.sqf\";\";\n",
                 "description=\"US Army Alpha Fireteam Leader\";\n",
-                "syncId=0;\n",
+                "syncId=4;\n",
                 "synchronizations[]={116,117};\n",
                 "};"
             };
@@ -160,7 +160,7 @@ namespace SQMImportExport.Tests.Import.ArmA3
             Assert.AreEqual(@"GrpUS_Alpha = group this; nul = [""ftl"",this] execVM ""f\common\folk_assignGear.sqf"";",
                 itemResult.Init);
             Assert.AreEqual("US Army Alpha Fireteam Leader", itemResult.Description);
-            Assert.AreEqual(0, itemResult.SyncID);
+            Assert.AreEqual(4, itemResult.SyncId);
             Assert.AreEqual(116, itemResult.Synchronizations[0]);
             Assert.AreEqual(117, itemResult.Synchronizations[1]);
         }

@@ -247,7 +247,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             originalVehicleText.Append("text=\"UnitGUE_MTR1_AG\";\n");
             originalVehicleText.Append("init=\"GrpGUE_MTR1 = group this; nul = [\"mtrag\",this] execVM \"f\\common\\folk_assignGear.sqf\";\";\n");
             originalVehicleText.Append("description=\"TK Local Mortar Team 1 Assistant Gunner\";\n");
-            originalVehicleText.Append("syncId=0;\n");
+            originalVehicleText.Append("syncId=4;\n");
             originalVehicleText.Append("synchronizations[]={1,2,3};\n");
             originalVehicleText.Append("};\n");
 
@@ -276,7 +276,7 @@ namespace SQMImportExport.Tests.Export.ArmA3
             vehicle.Text = "UnitGUE_MTR1_AG";
             vehicle.Init = "GrpGUE_MTR1 = group this; nul = [\"mtrag\",this] execVM \"f\\common\\folk_assignGear.sqf\";";
             vehicle.Description = "TK Local Mortar Team 1 Assistant Gunner";
-            vehicle.SyncID = 0;
+            vehicle.SyncId = 4;
             vehicle.Synchronizations = new List<int> { 1, 2, 3 };
 
             var actualVehicleText = _exportVisitor.Visit("Item", vehicle);
