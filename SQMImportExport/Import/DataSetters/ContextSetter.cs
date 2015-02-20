@@ -24,10 +24,7 @@ namespace SQMImportExport.Import.DataSetters
 
                 return Result.Success;
             }
-            else
-            {
-                return Result.Failure;
-            }
+            return Result.Failure;
         }
     }
 }

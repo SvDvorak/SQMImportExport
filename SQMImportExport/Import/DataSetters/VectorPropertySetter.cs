@@ -13,8 +13,7 @@ namespace SQMImportExport.Import.DataSetters
         public VectorPropertySetter(string propertyName, Action<Vector> propertySetter)
             : base(propertyName, CommonRegexPatterns.DoublePattern, propertySetter)
         {
-            _doubleFormatInfo = new NumberFormatInfo();
-            _doubleFormatInfo.CurrencyDecimalSeparator = ".";
+            _doubleFormatInfo = new NumberFormatInfo {CurrencyDecimalSeparator = "."};
         }
 
         protected override void SetPropertyValues(List<string> values)

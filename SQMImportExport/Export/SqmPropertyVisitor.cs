@@ -62,7 +62,7 @@ namespace SQMImportExport.Export
             stringBuilder.Append(propertyName);
             stringBuilder.Append("[]={");
 
-            for (int i = 0; i < intItems.Count; i++)
+            for (var i = 0; i < intItems.Count; i++)
             {
                 stringBuilder.Append(intItems[i]);
 
@@ -90,7 +90,7 @@ namespace SQMImportExport.Export
             stringBuilder.Append(propertyName);
             stringBuilder.Append("[]=\n{\n");
 
-            for (int i = 0; i < stringItems.Count; i++)
+            for (var i = 0; i < stringItems.Count; i++)
             {
                 stringBuilder.Append("\"");
                 stringBuilder.Append(stringItems[i]);
@@ -119,14 +119,9 @@ namespace SQMImportExport.Export
 
             var stringBuilder = new StringBuilder();
 
-            if (markers.IsMarkersSingleLine)
-            {
-                stringBuilder.Append(GetMarkersAsSingleString(markers.Items));
-            }
-            else
-            {
-                stringBuilder.Append(Visit("markers", markers.Items));
-            }
+            stringBuilder.Append(markers.IsMarkersSingleLine
+                ? GetMarkersAsSingleString(markers.Items)
+                : Visit("markers", markers.Items));
 
             return stringBuilder.ToString();
         }
@@ -138,7 +133,7 @@ namespace SQMImportExport.Export
 
             if (markers.Count > 0)
             {
-                for (int index = 0; index < markers.Count - 1; index++)
+                for (var index = 0; index < markers.Count - 1; index++)
                 {
                     var marker = markers[index];
                     stringBuilder.Append("\"" + marker + "\",");
