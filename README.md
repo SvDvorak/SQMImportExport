@@ -18,7 +18,7 @@ Use the Export function on the SqmExporter to export an SqmContentsBase instance
 	var exportStream = new FileStream("c:\\mission_out.sqm", FileMode.Create);
 	var exporter = new SqmExporter();
 	exporter.Export(exportStream, sqmContents);
-	exportStream.Close()
+	exportStream.Close();
 
 #Release Notes
 Version 0.3
