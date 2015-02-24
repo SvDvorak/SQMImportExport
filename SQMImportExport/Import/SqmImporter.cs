@@ -35,12 +35,7 @@ namespace SQMImportExport.Import
             try
             {
                 var fileVersion = _fileVersionRetriever.GetVersion(stream);
-                if (fileVersion == FileVersion.FileVersion.ArmA2)
-                {
-                    return _arma2Importer.Import(stream);
-                }
-
-                return _arma3Importer.Import(stream);
+                return fileVersion == FileVersion.FileVersion.ArmA2 ? _arma2Importer.Import(stream) : _arma3Importer.Import(stream);
             }
             catch (Exception exception)
             {

@@ -29,13 +29,12 @@ namespace SQMImportExport.Import.FileVersion
 
         private FileVersion GetVersion(int version)
         {
-            if (version == 11)
+            switch (version)
             {
-                return FileVersion.ArmA2;
-            }
-            if (version == 12)
-            {
-                return FileVersion.ArmA3;
+                case 11:
+                    return FileVersion.ArmA2;
+                case 12:
+                    return FileVersion.ArmA3;
             }
 
             throw new SqmIncorrectVersionException(version);

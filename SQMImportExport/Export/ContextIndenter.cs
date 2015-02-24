@@ -65,7 +65,7 @@ namespace SQMImportExport.Export
 
         private void AddIndentation(int indentationLevel, StringBuilder builder)
         {
-            for (int i = 0; i < indentationLevel; i++)
+            for (var i = 0; i < indentationLevel; i++)
             {
                 builder.Append('\t');
             }

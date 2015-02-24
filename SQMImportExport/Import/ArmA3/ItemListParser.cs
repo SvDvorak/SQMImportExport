@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using SQMImportExport.Import.Context;
 
@@ -23,7 +24,7 @@ namespace SQMImportExport.Import.ArmA3
 
         public bool IsCorrectContext(SqmContext context)
         {
-            bool isCorrectListElement = false;
+            var isCorrectListElement = false;
 
             context.MatchHeader(_classRegex, match =>
                 {
@@ -38,25 +39,12 @@ namespace SQMImportExport.Import.ArmA3
             _itemCount = 0;
             var itemParser = _itemParserFactory.CreateParser();
 
-            var itemList = new List<TItemType>();
-
-            foreach (var line in context.Lines)
+            foreach (var line in context.Lines.Where(line => line.IsMatch(_itemCountRegex)))
             {
-                if (line.IsMatch(_itemCountRegex))
-                {
-                    line.Match(_itemCountRegex, SetItemCount);
-                }
+                line.Match(_itemCountRegex, SetItemCount);
             }
 
-            foreach (var subContext in context.SubContexts)
-            {
-                if (itemParser.IsCorrectContext(subContext))
-                {
-                    var item = itemParser.ParseContext(subContext);
-
-                    itemList.Add(item);
-                }
-            }
+            var itemList = (from subContext in context.SubContexts where itemParser.IsCorrectContext(subContext) select itemParser.ParseContext(subContext)).ToList();
 
             if (_itemCount != itemList.Count)
             {

@@ -11,8 +11,7 @@ namespace SQMImportExport.Import.DataSetters
         public DoublePropertySetter(string propertyName, Action<double> propertySetter)
             : base(propertyName, CommonRegexPatterns.DoublePattern, propertySetter)
         {
-            _doubleFormatInfo = new NumberFormatInfo();
-            _doubleFormatInfo.CurrencyDecimalSeparator = ".";
+            _doubleFormatInfo = new NumberFormatInfo {CurrencyDecimalSeparator = "."};
         }
 
         protected override void SetValue(string value)

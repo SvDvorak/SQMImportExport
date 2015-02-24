@@ -24,9 +24,8 @@ namespace SQMImportExport.Import.Context
 
         public SqmContext CreateContext(List<string> contextText)
         {
-            var context = new SqmContext();
+            var context = new SqmContext {Header = contextText[0]};
 
-            context.Header = contextText[0];
 
             ReadInsideContext(contextText.Skip(2).ToList(), context);
 
@@ -35,7 +34,7 @@ namespace SQMImportExport.Import.Context
 
         private void ReadInsideContext(List<string> contextText, SqmContext context)
         {
-            for (int i = 0; i < contextText.Count - 1; i++)
+            for (var i = 0; i < contextText.Count - 1; i++)
             {
                 var currentLine = contextText[i];
                 var nextLine = contextText[i + 1];
